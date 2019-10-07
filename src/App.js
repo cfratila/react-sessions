@@ -1,38 +1,28 @@
 import React from 'react';
+
 import './App.css';
+import Header from './components/Header';
+import Movie from './components/Movie';
+import MovieDetails from './components/MovieDetails';
 
 // todo: create 3 components - Header, Movie and MovieDetails - to display the following information
 
 const App = () => {
     return (
         <div className="App">
-            <Header title="Best movies ever made"
-                    subtitle="at least according to IMDB"/>
-            <ul>
-                <Movie name="The Godfather"
-                       releaseYear="1972"
-                       director="Francis Ford Coppola">
-                    <MovieDetails oscarsNominations="11"
-                                  oscarsWon="3"/>
+            <Header title="Best movies ever made" subtitle="at least according to IMDB"/>
+             <ul>
+                <Movie name="The Godfather" releaseYear="1972" director="Francis Ford Coppola">
+                    <MovieDetails oscarsNominations="11" oscarsWon="3"/>
                 </Movie>
-                <Movie name="Schindler's List"
-                       releaseYear="1993"
-                       director="Steven Spielberg">
-                    <MovieDetails oscarsNominations="12"
-                                  oscarsWon="7"/>
+                <Movie name="Schindler's List" releaseYear="1993" director="Steven Spielberg">
+                    <MovieDetails oscarsNominations="12" oscarsWon="7"/>
                 </Movie>
-                <Movie name="12 Angry Men"
-                       releaseYear="1957"
-                       director="Sidney Lumet"/>
-                <Movie name="Life Is Beautiful"
-                       releaseYear="1997"
-                       director="Roberto Benigni">
-                    <MovieDetails oscarsNominations="7"
-                                  oscarsWon="3"/>
+                <Movie name="12 Angry Men" releaseYear="1957" director="Sidney Lumet"/>
+                <Movie name="Life Is Beautiful" releaseYear="1997" director="Roberto Benigni">
+                    <MovieDetails oscarsNominations="7" oscarsWon="3"/>
                 </Movie>
-                <Movie name="The Good, the Bad and the Ugly"
-                       releaseYear="1966"
-                       director="Sergio Leone"/>
+                <Movie name="The Good, the Bad and the Ugly" releaseYear="1966" director="Sergio Leone"/>
             </ul>
         </div>
     );
